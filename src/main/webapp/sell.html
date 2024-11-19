@@ -1,0 +1,99 @@
+<table><tr>
+    <td class="inner-top-left">
+        <h1 id="notClosedAuctions_title">Not closed auctions list</h1>
+        <table id="notClosedAuctions_table">
+            <tr>
+                <th>Auction ID</th>
+                <th>Terminates in (on)</th>
+                <th>Terminated</th>
+                <th>Last bid</th>
+                <th>Article id</th>
+                <th>Article name</th>
+                <th>Article image</th>
+                <th/>
+            </tr>
+            <tbody class="content" id="notClosedAuctions_body"></tbody>
+        </table>
+    </td>
+    <td id="auctionDetails_div" style="padding-left: 40px; vertical-align: top;" rowspan="2">
+        <h1 id="auctionDetails_title"></h1><br>
+        <div id="auctionDetails_divBody">
+            Auction terminates on <span></span><br/>
+            Minimum bid delta: <span></span><br/>
+            Closed by user: <span></span><br/>
+            <span>Winner user username:</span> <span></span><br/>
+            <span>Winning bid amount:</span> <span></span><br/>
+            <span>Winner user address:</span> <span></span><br/>
+        </div>
+        <br/><br/>
+        <br/>
+
+        <div id="closeAuction_div">
+            Auction is terminated, click here to close:
+            <form action="#" method="POST" id="closeAuction_form">
+                <input type="submit" value="close">
+            </form>
+            <span id="closeAuction_message"></span>
+        </div>
+
+        <h2 id="bidsList_title">Bids list</h2>
+        <table id="bidsList_table">
+            <tr>
+                <th>Placed on</th>
+                <th>Bidder username</th>
+                <th>Amount</th>
+            </tr>
+            <tbody class="content" id="bidsList_body"></tbody>
+        </table>
+    </td></tr>
+    <tr><td>
+        <h1 id="closedAuctions_title">Closed auctions list</h1>
+        <table id="closedAuctions_table">
+            <tr>
+                <th>Auction ID</th>
+                <th>Terminated on</th>
+                <th>Last bid</th>
+                <th>Article id</th>
+                <th>Article name</th>
+                <th>Article image</th>
+                <th/>
+            </tr>
+            <tbody class="content" id="closedAuctions_body"></tbody>
+        </table>
+    </td>
+</tr>
+<tr><td>
+    <h3>Add a new article to your list</h3>
+    <form action="#" method="POST" enctype='multipart/form-data' id="addArticle_form">
+        Name: <input type="text" name="name" required="required">
+        Base price: <input type="number" name="basePrice" step="0.01" min="0.01" required="required">
+        Description: <input type="text" name="desc">
+        Image: <input type="file"
+                      name="image"
+                      accept=".jpg, .JPG, .jpeg, .JPEG, .png, .PNG, .gif, .GIF">
+        <input type="submit" value="add">
+    </form><br/>
+    <span id="addArticle_message"></span>
+    <br/>
+    <h3>Create a new auction</h3>
+    <form action="#" method="POST" id="addAuction_form">
+        Auction minimum bid delta: <input type="number" name="minBidDelta" step="1" min="0" required="required"><br/>
+        Auction terminates at: <input type="datetime-local" name="terminatesAt" required="required"><br/><br/>
+
+        <span id="articlesList_title">Articles list</span>
+        <table id="articlesList_table">
+            <tr>
+                <th></th>
+                <th>Starting price</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+            <tbody id="articlesList_body"></tbody>
+            <br/>
+        </table>
+        <input type="submit" value="create">
+    </form>
+    <span id="addAuction_message"></span>
+</td></tr>
+</table>

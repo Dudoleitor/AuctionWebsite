@@ -1,0 +1,108 @@
+.box {
+    z-index: 1; /* Stay on top */
+    background-color: #0d0d0d;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 150px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* The username box */
+.top-left-box {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 150px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box span {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: #bfbfbf;
+}
+
+.box a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: #bfbfbf;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+body{
+    background-color: #191919;
+}
+.main a:link {
+    color: #28a428;
+}
+.main a:visited {
+    color: #28a428;
+}
+.main a:hover {
+    color: #00e600;
+}
+/* Style page content */
+.main {
+    margin-left: 165px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    color: #e6e6e6;
+}
+.main h1, h2, h3 {
+    color: white
+}
+
+.main input[type=text], input[type=password], input[type=number], input[type=datetime-local]{
+    color: black;
+    background-color: white;
+    border: none;
+    border-bottom: 3px solid #28a428;
+    margin: 6px;
+    font-size: 12pt;
+}
+.main input[type=submit], input[type=image]{
+    color: black;
+    background-color: white;
+    margin: 6px;
+    font-size: 12pt;
+}
+.main textarea {
+    color: black;
+}
+
+.inner-top-left td{
+    padding-right: 40px;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0d0d0d;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.content td {
+    border: 1px solid;
+    padding: 8px;
+}

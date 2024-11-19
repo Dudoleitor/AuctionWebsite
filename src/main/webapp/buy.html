@@ -1,0 +1,75 @@
+<table><tr>
+  <td class="inner-top-left">
+    <h1>Open auctions list</h1><br/>
+    Search: <form action="#" method="GET" id="openAuctionsWithSearch_form"><input type="text" name="q"><input type="submit" value="send"></form><br/><br/>
+    <h2 id="openAuctionsWithSearch_message"></h2>
+    <table id="openAuctionsWithSearch_table">
+      <tr>
+        <th>ID</th>
+        <th>Terminates in</th>
+        <th>Minimum bid delta</th>
+        <th>Creator username</th>
+        <th/>
+      </tr>
+      <tbody class="content" id="openAuctionsWithSearch_body"></tbody>
+    </table>
+  </td>
+  <td id="auctionDetails_div" style="padding-left: 40px; vertical-align: top;" rowspan="2">
+    <h1 id="auctionDetails_title"></h1><br>
+    <div id="auctionDetails_divBody">
+      Auction owner: <span></span><br/>
+      Auction terminates on <span></span><br/>
+      Minimum bid delta: <span></span><br/>
+      Closed by user: <span></span><br/>
+    </div>
+    <br/><br/>
+    <h2 id="articlesList_title">Articles list</h2>
+    <table id="articlesList_table">
+      <tr>
+        <th>Starting price</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+      </tr>
+      <tbody class="content" id="articlesList_body"></tbody>
+      <br/>
+    </table>
+    <br/>
+
+    <div id="placeBid_div">
+      Place your bid:
+      <form action="placeBid" method="POST" id="placeBid_form">
+        <input type="number" step="0.01" name="bid" required="required" id="placeBid_input">
+        <input type="submit" value="place">
+      </form>
+      <span id="placeBid_message"></span>
+    </div>
+
+    <h2 id="bidsList_title">Bids list</h2>
+    <table id="bidsList_table">
+      <tr>
+        <th>Placed on</th>
+        <th>Bidder username</th>
+        <th>Amount</th>
+      </tr>
+      <tbody class="content" id="bidsList_body"></tbody>
+    </table>
+  </td>
+</tr>
+  <tr><td style="padding-top: 40px; padding-right: 40px; vertical-align: top;">
+    <h1 id="wonAuctions_title">Auctions you won</h1>
+    <table id="wonAuctions_table">
+      <tr>
+        <th>Auction ID</th>
+        <th>Terminated on</th>
+        <th>Auction creator username</th>
+        <th>Winning bid</th>
+        <th>Article name</th>
+        <th>Article description</th>
+        <th>Article image</th>
+        <th/>
+      </tr>
+      <tbody class="content" id="wonAuctions_body"></tbody>
+    </table>
+  </td></tr>
+</table>
